@@ -17,8 +17,8 @@
 ```
 
 az vm run-command invoke `
-    -g rg-garagesession `
-    -n vm-iotedge `
+    -g <resourcegroup name> `
+    -n <vm name> `
     --command-id RunPowerShellScript `
     --script ". {Invoke-WebRequest -useb https://aka.ms/iotedge-win} | Invoke-Expression; Deploy-IoTEdge"
 
@@ -43,8 +43,8 @@ echo "`n$derivedkey`n"
 
 ```
 az vm run-command invoke `
-    -g rg-garagesession `
-    -n vm-iotedge `
+    -g <resourcegroup name> `
+    -n <vm name> `
     --command-id RunPowerShellScript `
       --script ". {Invoke-WebRequest -useb https://aka.ms/iotedge-win} | Invoke-Expression; Initialize-IoTEdge -Dps -ScopeId <dpsscopeId> -RegistrationId <deviceid> -SymmetricKey <derived device key>"
 ```
@@ -72,7 +72,7 @@ iotedge logs <replace with modulename>
 > Monitor events from the device
 
 ```
-az iot hub monitor-events -n iothub-garagesession -d iotedgedevice01
+az iot hub monitor-events -n <iothub name> -d <deviceId>
 ```
 ### Deployment
 
