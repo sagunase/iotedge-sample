@@ -4,9 +4,9 @@
 ### Prerequisites
 
 1. Azure Subscription
-2. Create Windows Server Virtual Machine [Azure CLI Commands](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-windows-server-vm#deploy-from-azure-cli)
-2. Create Device Provisioning Service
-3. Create Azure IoT Hub
+2. Windows Server Virtual Machine [Azure CLI Commands](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-windows-server-vm#deploy-from-azure-cli)
+3. Azure IoT Hub [Azure CLI Commands](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli#create-an-iot-hub)
+4. Device Provisioning Service [Azure CLI Commands](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli#create-an-iot-hub)
 
 ### Setup Azure IoT Edge Runtime in Virtula Machine
 
